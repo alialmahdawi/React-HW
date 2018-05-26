@@ -1,0 +1,23 @@
+.title{
+    margin-bottom: 0px;
+}
+a{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10pt;
+    color: #0a0000;
+    text-decoration: none;
+}
+
+.votearrow{
+    width: 10px;
+    height: 10px;
+    border: 0px;
+    background: no-repeat;
+
+}
+
+p{
+margin-top: 2px;
+font-size: 7pt;
+
+}
