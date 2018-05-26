@@ -13,7 +13,7 @@ function ShowTitle(props) {
 }
 function TimePassed(props) {
     return (
-        <span>{new Date() - props.timeISO} ago</span>
+        <span>{new Date() - Date.parse(props.timeISO)} ago</span>
     )
 }
 function SubTitle(props) {
