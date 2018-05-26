@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "dependencies": {
     "gh-pages": "^1.1.0",
+    "graphql": "^0.13.2",
+    "graphqlhub-schemas": "^0.1.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "request": "^2.79.0"
   },
-  "homepage": "https://alialmahdawi.github.io/hyf-react-week1",
+  "homepage": "https://alialmahdawi.github.io/React-HW/week2",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

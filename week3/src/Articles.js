@@ -273,3 +273,6 @@ export default {
       }]
     }
   }
+
+  console.log(Date.parse("2018-05-12T20:55:35.000Z")/1000/60/60);
+  console.log(Date.parse(new Date()));
