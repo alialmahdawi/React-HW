@@ -13,7 +13,7 @@ function ShowTitle(props) {
 }
 function TimePassed(props) {
     return (
-        <span>{new Date() - Date.parse(props.timeISO)} ago</span>
+        <span>{getDate(new Date()) - getDate(props.timeISO)} ago</span>
     )
 }
 function SubTitle(props) {
@@ -24,4 +24,13 @@ function SubTitle(props) {
 export {
     ShowTitle,
     SubTitle,
+}
+
+function getDate(str){
+
+    var dateObj = new Date(str);
+    var hours = dateObj.getUTCHours();
+    var minutes = dateObj.getUTCMinutes();
+
+    return( hours*60+minutes);
 }
