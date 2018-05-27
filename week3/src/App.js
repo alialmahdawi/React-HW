@@ -16,7 +16,8 @@ class App extends Component {
         <header className="App-header">
           <p>
             <a className='maintitle' href='https://news.ycombinator.com/news'>Hacker News</a> | 
-            <a href= {<NewsViewer />} onClick={()=>showIt()}>Top</a> | 
+            <a >Top</a> | 
+            <a href='https://news.ycombinator.com/newest'>New</a> |
             <a href='https://news.ycombinator.com/newcomments'>Comments</a> |
             <a href='https://news.ycombinator.com/show'>Show</a> | 
             <a href='https://news.ycombinator.com/ask'>Ask</a> | 
@@ -25,9 +26,8 @@ class App extends Component {
             <a className='login' href='https://news.ycombinator.com/login?goto=news'>Login</a>
           </p>
         </header>
-        <div>
-          {showIt(() =>
-            (<NewsViewer/>))}
+        <div id='Top'>
+          <NewsViewer />
           </div>
       </div>
 
