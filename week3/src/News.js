@@ -17,7 +17,7 @@ import './App.css';
             getHNStories('top')
                 .then((data) => {
                     this.setState({ data: data, });
-                    console.log(data[0]);
+                    // console.log(data);
                 })
                 .catch((error) => {
                     return error;
@@ -29,10 +29,10 @@ import './App.css';
 
     render() {
         return (
-            <div>
+            <div >{this.FetchData()}
                 <ol className='mine'>{this.state.data.map((item) => {
                     return (
-                        <div id='TitleBlock'>
+                        <div id='TitleBlock' >
                             <ShowTitle id={item.id} title={item.title} url={item.url} />
                             <SubTitle by={item.by} id={item.by.id} timeISO={item.timeISO} />
                         </div>
